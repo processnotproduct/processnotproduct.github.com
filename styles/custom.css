@@ -1409,4 +1409,7 @@ ul.icon-list {
 .footer-social-links {
   margin: 0 15px;
 }
+.cc-top {
+  top: 4em;
+}
 }
