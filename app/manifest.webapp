@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "name": "Legendary Motors",
+  "launch_path": "/index.html",
+  "description": "Legendary Motors - Building Mythical Cars for the Future | Introducing the all new Uni C-1",
+  "icons": {
+    "48": "images/touch/android-icon-48x48.png",
+    "96": "images/touch/android-icon-96x96.png",
+    "192": "images/touch/android-icon-192x192.png"
+  },
+  "developer": {
+    "name": "Tyson Kemp",
+    "url": "http://www.tysonkemp.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Legendary Motors",
+      "description": "Legendary Motors - Building Mythical Cars for the Future | Introducing the all new Uni C-1"
+    }
+  }
+}
