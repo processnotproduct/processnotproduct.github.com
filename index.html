@@ -716,6 +716,9 @@
       </div>
     </footer><!-- Footer end -->
 
+    <!-- Device Rotate Lock Screen -->
+    <div class="turnDeviceNotification"></div>
+
   </div>
 
   <!-- Wrapper end -->
@@ -735,8 +738,38 @@
     </script>
 
     <!-- Smooth Scroll Init -->
-    <script>
+    <script type="text/javascript">
       smoothScroll.init();
+    </script>
+
+    <script type="text/javascript">
+      jQuery(window).bind('orientationchange', function(e) {
+       switch ( window.orientation ) {
+        case 0:
+          $('.navbar-custom').css('display', 'block');
+          $('.turnDeviceNotification').css('display', 'none');
+          // The device is in portrait mode now
+        break;
+
+        case 180:
+          $('.navbar-custom').css('display', 'block');
+          $('.turnDeviceNotification').css('display', 'none');
+          // The device is in portrait mode now
+        break;
+
+        case 90:
+          // The device is in landscape now
+          $('.navbar-custom').css('display', 'none');
+          $('.turnDeviceNotification').css('display', 'block');
+        break;
+
+        case -90:
+          // The device is in landscape now
+          $('.navbar-custom').css('display', 'none');
+          $('.turnDeviceNotification').css('display', 'block');
+        break;
+       }
+      });
     </script>
 
     <!-- Google Analytics -->

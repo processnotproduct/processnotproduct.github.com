@@ -565,6 +565,24 @@ i.fa.fa-angle-down {
   /*padding:12px 12px 12px 8px;*/
 }
 
+.navbar-custom {
+  display: block;
+}
+
+.turnDeviceNotification {
+  position:fixed;
+  z-index: 1001;
+  top: -20%;
+  left: -20%;
+  height: 140%;
+  width: 140%;
+  display: none;
+  background-image:url('../images/turnDevice.png');
+  background-size:cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
 .about {
   height: 100vh;
 }
@@ -610,7 +628,7 @@ h3.font-alt.mb-20 {
 .divider-w {
   border-top: 1px solid #bbb;
   position: relative;
-  z-index: 999;
+  z-index: -1;
 }
 
 .caption-content {
