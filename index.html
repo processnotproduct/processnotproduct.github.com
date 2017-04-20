@@ -746,12 +746,14 @@
       jQuery(window).bind('orientationchange', function(e) {
        switch ( window.orientation ) {
         case 0:
+          $('html').css('overflow-y', 'scroll');
           $('.navbar-custom').css('display', 'block');
           $('.turnDeviceNotification').css('display', 'none');
           // The device is in portrait mode now
         break;
 
         case 180:
+          $('html').css('overflow-y', 'scroll');
           $('.navbar-custom').css('display', 'block');
           $('.turnDeviceNotification').css('display', 'none');
           // The device is in portrait mode now
@@ -759,12 +761,14 @@
 
         case 90:
           // The device is in landscape now
+          $('html').css('overflow-y', 'hidden');
           $('.navbar-custom').css('display', 'none');
           $('.turnDeviceNotification').css('display', 'block');
         break;
 
         case -90:
           // The device is in landscape now
+          $('html').css('overflow-y', 'hidden');
           $('.navbar-custom').css('display', 'none');
           $('.turnDeviceNotification').css('display', 'block');
         break;

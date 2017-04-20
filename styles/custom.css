@@ -580,7 +580,6 @@ i.fa.fa-angle-down {
   background-image:url('../images/turnDevice.png');
   background-size:cover;
   background-position: 50% 50%;
-  overflow: hidden;
 }
 
 .about {
